@@ -17,6 +17,12 @@ body {
     background-size: 300vh;
 }
 
+@media (max-width: 768px) {
+    body {
+        background-position: center !important; /* Fix the background position */
+    }
+}
+
 .calculatorBody {
     height: 80vh;
     width: 45vh;
