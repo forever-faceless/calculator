@@ -21,7 +21,9 @@ const res = () => {
     }
 }
 
-document.addEventListener("mousemove", parallax)
+if (window.innerWidth >= 768) {
+    document.addEventListener("mousemove", parallax);
+}
 
 function parallax(e) {
     const x = (e.clientX / window.innerWidth) * 5;
