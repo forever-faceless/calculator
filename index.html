@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calculatorBody">
+      <input type="text" name="secondaryDisp" id="secondaryDisp" readonly/>
+      <input type="text" name="mainDisplay" id="mainDisp" readonly/>
+      <button class="clear" onclick="clrScr()">C</button>
+      <button class="del" onclick="del()">&#10502;</button>
+      <button class="symbols" onclick="appendElement('%')">%</button>
+      <button class="symbols" onclick="appendElement('/')">&divide;</button>
+      <button onclick="appendElement('1')">1</button>
+      <button onclick="appendElement('2')">2</button>
+      <button onclick="appendElement('3')">3</button>
+      <button class="symbols" onclick="appendElement('*')">&times;</button>
+      <button onclick="appendElement('4')">4</button>
+      <button onclick="appendElement('5')">5</button>
+      <button onclick="appendElement('6')">6</button>
+      <button class="symbols" onclick="appendElement('+')">+</button>
+      <button onclick="appendElement('7')">7</button>
+      <button onclick="appendElement('8')">8</button>
+      <button onclick="appendElement('9')">9</button>
+      <button class="symbols" onclick="appendElement('-')">-</button>
+      <button class="zero" onclick="appendElement('0')">0</button>
+      <button class="symbols" onclick="appendElement('.')">.</button>
+      <button class="equals" onclick="res()">=</button>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
