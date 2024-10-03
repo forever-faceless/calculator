@@ -21,7 +21,13 @@ const res = () => {
     }
 }
 
-document.addEventListener("mousemove", parallax)
+function isTouchDevice() {
+    return 'ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
+}
+
+if (!isTouchDevice()) {
+    document.addEventListener("mousemove", parallax);
+}
 
 function parallax(e) {
     const x = (e.clientX / window.innerWidth) * 5;
